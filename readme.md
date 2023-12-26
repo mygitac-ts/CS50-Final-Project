@@ -33,7 +33,7 @@ The JavaScript file controls the dynamic behavior of the application. It handles
 ### `app.py`
 The Flask backend powers the application's server-side functionality. It manages routes for rendering templates, adding and removing daily products and custom items, and clearing all items. The file includes sample data for daily products and integrates the frontend actions with server-side logic.
 
-### 'styles.css'
+### `styles.css`
 The CSS file contains the styling information for the application to define its visual appearance and layout.
 
 ## Features
@@ -43,17 +43,12 @@ The CSS file contains the styling information for the application to define its 
 - **Easy Removal:** Remove selected item that are completed.
 - **Reset lists:** Remove everything and reset both lists with a button.
 
-## Installation
+## How to launch application
 
 To set up the project locally, follow these steps:
 
-1. Clone the repository: `git clone <https://github.com/code50/128324417/tree/main/mylist>`
-2. Navigate to the project directory: `cd my-list`
-3. Install dependencies: `pip install -r requirements.txt`
-
-## How to launch application
-
-1. Run the Flask application: `python app.py`
-2. Open the application in your web browser: `http://127.0.0.1:5000/`
-3. Interact with the application to create and manage your daily lists.
-
+1. Clone the repository: `git clone https://github.com/mygitac-ts/CS50-Final-Project.git`
+2. Navigate to the project directory: `cd CS50-Final-Project.git`
+3. Open workspace
+4. Run 'flask.run'
+5. Open the application in your web browser: `http://127.0.0.1:5000/`
