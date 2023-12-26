@@ -3,8 +3,13 @@
 #### Video Demo:  <https://www.youtube.com/watch?v=VgJaB6ZngKY>
 
 #### Description:
-"My List" is a simple web application designed to help users create and manage their daily to-do lists for shopping or other notes that should not forget.
+"My List" is a simple web application designed to help users create and manage their daily consume list or other tasks that need to remember. There are two option that are separated in two different columns. On the left, it allows to select daily products from a pre-defined list of foods and drinks and add them to a to-do list. On the right column there is a free text field to create custom notes to a different list, like using a digital post-it.
 
+Users can interact with the lists by selecting the completed tasks from each list (tick-off) and remove them separately by clicking on the "Remove checked" button. Lastly, there is also a "Remove All" button that removes clear both list, providing a quick reset to the initial status.
+
+This app is also designe to work smoothly in mobile phones.
+
+The project was developed using HTML, JavaScript, Python, and CSS technologies to offer an intuitive and straightforward user experience for organizing daily tasks and reminders.
 ## Table of Contents
 
 - [Technologies used](#technologies-used)
