@@ -1,0 +1,256 @@
+/*General style*/*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /*Body style*/
+  body {
+    font-family: Georgia, serif;
+    background-image: url('../static/mylist_background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: top;
+    height: 100vh;
+  }
+
+  /*Top Bar style*/
+  .top-bar {
+    height: 120px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background-position: center;
+    background-color: #fffefa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /*Image style*/
+.small-image {
+  height: 100px;
+  width: auto;
+  float: center;
+  margin-top: 5px;
+}
+
+/*Header 2*/
+h2 {
+  color: rgb(82, 81, 81)
+}
+
+.right-column h2 {
+  margin-right: 20px;
+}
+
+  /* Main container styles */
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px;
+  }
+
+  /* Columns styles */
+  .left-column,
+  .right-column {
+    width: 40%;
+    padding: 20px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    text-align: center;
+    margin-top: 15px;
+  }
+
+
+  /* Right column styles */
+  .right-column {
+    background-color: #e8f1fcc4;
+    box-shadow: -2px 5px 8px rgba(0, 0, 0, 0.3); /* Adds shadow */
+    margin-right: 50px;
+  }
+
+  /* Left column styles */
+  .left-column {
+    background-color: rgba(230, 230, 250, 0.87);
+    box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.3);
+    margin-left: 50px;
+  }
+
+  /*When window gets smaller*/
+  @media screen and (max-width: 768px) {
+    .left-column,
+    .right-column {
+        width: 100%; /* Full width on smaller screens */
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    }
+
+
+  /* Selected products list */
+  .selected-products,
+  .custom-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 20;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+
+  .selected-products li,
+  .custom-item li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 5px;
+    padding: 8px;
+    font-size: 22px;
+  }
+
+
+  /* Checkboxes */
+  input[type="checkbox"] {
+    transform: scale(1.5); /* Increase their size */
+  }
+
+  .custom-checkbox {
+    margin-right: 10px;
+  }
+
+  .supermarket-checkbox {
+    margin-right: 10px;
+  }
+
+
+
+  /* Button styles */
+  button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  /* Button Remove All style */
+  button#remove-all {
+    margin-top: 20000px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.856);
+    color: rgb(68, 68, 68);
+  }
+
+
+  #remove-all {
+    height: 50px;
+    width: 200px;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 19px;
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+    padding: 0 20px;
+    border: none;
+    cursor: pointer;
+    background-color: #313131;
+    border-radius: 8px;
+    transition: all 0.4s ease;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  #remove-all:hover {
+    background-color: #df0000;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+    color: white;
+  }
+
+
+  /*Remove checked buttons*/
+  button#remove-selected-left,
+  button#remove-selected-right {
+    margin-top: 40px;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+    background-color: #538fbe;
+    padding: 9px 30px;
+    font-size: 18px;
+    border: 1px solid #2d6898;
+  }
+
+  button#remove-selected-left:hover,
+  button#remove-selected-right:hover {
+    background-color: #b30000;
+  }
+
+  /*Add button*/
+  button#add-item {
+    background-color: rgb(47, 212, 47);
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    margin-left: 15px;
+    height: 38px;
+    width: 100px;
+    border-radius: 25px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  button#add-item:hover {
+    background-color: #3dd13d;
+  }
+
+
+body {
+    background-color: #f2f2f2;
+}
+
+/*Dropdown list style*/
+#supermarket-products {
+  padding: 10px;
+  font-size: 16px;
+  width: 200px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+#supermarket-products option {
+  padding: 10px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+
+/*Right column list style*/
+#new-item-text {
+  height: 40px;
+  caret-color: blue;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  margin-left: 11%;
+  width: 250px;
+  font-size: 18px;
+  font-family: "Arial";
+}
+
+/*Container style*/
+.container {
+  margin-bottom: 80px;
+}
+
+
+

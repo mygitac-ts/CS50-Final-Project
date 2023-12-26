@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>My List</title>
+  <link rel="icon" href="static/mylist-favicon.png" type="image/png">
+  <link rel="stylesheet" type="text/css" href="../static/styles.css">
+</head>
+
+<body>
+  <div class="top-bar">
+    <img src="../static/mylist_logo.png" alt="my List" class="small-image">
+  </div>
+  <div class="container">
+
+    <!-- LEFT COLUMN -->
+    <div class="left-column">
+
+      <h2>Daily list</h2>
+      <select id="supermarket-products">
+        {% for product in supermarket_products %}
+          <option value="{{ product }}">{{ product }}</option>
+        {% endfor %}
+      </select>
+      <div class="selected-products">
+        <!-- Display selected products with checkboxes -->
+      </div>
+      <button id="remove-selected-left">Remove checked</button>
+    </div>
+
+    <!-- RIGHT COLUMN -->
+    <div class="right-column">
+
+      <h2>Keep your notes here</h2>
+      <input type="text" id="new-item-text">
+      <button id="add-item">Add</button>
+      <div class="custom-item">
+        <!-- Display custom products with checkboxes -->
+      </div>
+      <button id="remove-selected-right">Remove checked</button>
+    </div>
+
+  </div>
+
+  <!-- "Remove all" button -->
+  <button id="remove-all">Remove all</button>
+
+  <script>
+    const supermarketProducts = JSON.parse('{{ supermarket_products | safe }}');
+    console.log(supermarketProducts); // Log the contents to the console
+  </script>
+
+  <script src="../static/scripts.js"></script>
+
+  </body>
+</html>
